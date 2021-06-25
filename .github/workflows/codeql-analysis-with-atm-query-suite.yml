@@ -13,7 +13,7 @@ env:
 
 jobs:
   CodeQL-Build:
-    runs-on: ubuntu-latestubuntu-latest-xl
+    runs-on: ubuntu-latest-xl
 
     steps:
       - name: Checkout repository
