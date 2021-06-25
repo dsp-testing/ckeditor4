@@ -13,7 +13,7 @@ env:
 
 jobs:
   CodeQL-Build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latestubuntu-latest-xl
 
     steps:
       - name: Checkout repository
@@ -90,9 +90,7 @@ jobs:
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v1
         with:
-          ram: 5120
           output: '.github/codeql/codeql-javascript-atm/results'
-          threads: 1
 
       - name: Upload SARIF results output
         uses: actions/upload-artifact@v2
